@@ -31,9 +31,7 @@ void setup(){
   laserRange = 35;
 
   laserReStartX = laserStartX;
-
 }
-
 
 void draw(){
   //avoid robot and soldier are on the same aisle
@@ -81,8 +79,7 @@ void draw(){
     if(laserStartX-laserEndX == laserRange){
       laserStartX-=2;
     } //Start moving left after End is go over the Range
-    
-  
+   
     //characters
     image(groundhogImg,width/2-40,80);
     image(robotImg,robotXAxis,robotYAxis);
@@ -91,6 +88,5 @@ void draw(){
   }else{ 
     robotYAxis = floor(random(2,6))*80; //avoid robot and soldier are on the same aisle
     soldierYAxis = floor(random(2,6))*80;
-    }
-  
+    }  
 }
